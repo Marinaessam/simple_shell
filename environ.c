@@ -1,11 +1,11 @@
 #include "shell.h"
 
 /**
- * _myenv - prints the current environment
- * @info: Structure containing potential arguments. Used to maintain
- *          constant function prototype.
+ * _myenv - prints the environment
+ * @info: Structure containing potential arguments
  * Return: Always 0
- */
+*/
+
 int _myenv(info_t *info)
 {
 	print_list_str(info->env);
@@ -13,12 +13,12 @@ int _myenv(info_t *info)
 }
 
 /**
- * _getenv - gets the value of an environ variable
- * @info: Structure containing potential arguments. Used to maintain
+ * _getenv - gets the value of an env. variable
+ * @info: Structure containing potential arguments
  * @name: env var name
- *
- * Return: the value
- */
+ * Return: value of Env.
+*/
+
 char *_getenv(info_t *info, const char *name)
 {
 	list_t *node = info->env;
@@ -35,12 +35,11 @@ char *_getenv(info_t *info, const char *name)
 }
 
 /**
- * _mysetenv - Initialize a new environment variable,
- *             or modify an existing one
- * @info: Structure containing potential arguments. Used to maintain
- *        constant function prototype.
+ * _mysetenv - Initialize a new environment variable
+ * @info: Structure containing potential arguments
  *  Return: Always 0
  */
+
 int _mysetenv(info_t *info)
 {
 	if (info->argc != 3)
@@ -54,11 +53,11 @@ int _mysetenv(info_t *info)
 }
 
 /**
- * _myunsetenv - Remove an environment variable
- * @info: Structure containing potential arguments. Used to maintain
- *        constant function prototype.
- *  Return: Always 0
- */
+ * _myunsetenv - Remove an environmental variable
+ * @info: Structure containing potential arguments
+ * Return: Always 0
+*/
+
 int _myunsetenv(info_t *info)
 {
 	int i;
@@ -75,11 +74,11 @@ int _myunsetenv(info_t *info)
 }
 
 /**
- * populate_env_list - populates env linked list
- * @info: Structure containing potential arguments. Used to maintain
- *          constant function prototype.
+ * populate_env_list - populate enviromental linked list
+ * @info: The Structure that contain potential arguments
  * Return: Always 0
  */
+
 int populate_env_list(info_t *info)
 {
 	list_t *node = NULL;
