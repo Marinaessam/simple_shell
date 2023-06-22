@@ -2,10 +2,11 @@
 
 /**
  * main - entry point
- * @ac: arguments count
- * @av: arguments value
- * Return: 0 on success, 1 on error
- */
+ * @ac: The arguments count
+ * @av: The arguments value
+ * Return: 0 if success, 1 if error
+*/
+
 int main(int ac, char **av)
 {
 	info_t info[] = { INFO_INIT };
