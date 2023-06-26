@@ -1,7 +1,7 @@
-#include "main.h"
+#include "shell.h"
 
 /**
- * _strdup - duplicates a str in the heap memory.
+ * _strdup - duplicates a str in the heap memory
  * @s: Type char pointer str
  * Return: duplicated str
  */
@@ -19,9 +19,9 @@ char *_strdup(const char *s)
 }
 
 /**
- * _strlen - Returns the lenght of a string.
+ * _strlen - Returns the lenght of a string
  * @s: Type char pointer
- * Return: Always 0.
+ * Return: Always 0
  */
 int _strlen(const char *s)
 {
@@ -35,10 +35,9 @@ int _strlen(const char *s)
 
 /**
  * cmp_chars - compare chars of strings
- * @str: input string.
- * @delim: delimiter.
- *
- * Return: 1 if are equals, 0 if not.
+ * @str: input string
+ * @delim: delimiter
+ * Return: 1 if are equals, 0 if not
  */
 int cmp_chars(char str[], const char *delim)
 {
